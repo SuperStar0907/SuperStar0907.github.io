@@ -57,12 +57,6 @@
             </div>
             <div class="p-5 mb-4 bg-light round-3">
                 <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Cuts and Light Edges</h1>
-                    <p class="col-md-8 fs-4">We will introduce the notion of graph cuts to formally discuss which edges can be considered<br>safe to add to the MST edge set. Let a cut (S,V −S) of a graph G = (V,E) be a partition<br>of V into two disjoint sets S and V −S. From this, we can say that an edge (u,v) crosses<br>the cut (S,V −S) if the edge has one endpoint in S and the other in V −S. We can also say<br>that a cut respects a subset A of edges if no edges in A cross the cut. An edge is considered<br>a light edge crossing a cut if its weight is the minimum of any edge crossing the cut.<br> In the example above, let (S, V − S) be a cut of the graph where S contains the set of<br>nodes above the red curve and V − S contains the set of nodes below it, and the set A<br>be the set of edges colored blue. The edges which cross the cut are exactly the following:<br>(a,h),(b,h),(b,c),(c,d),(d,f ),(e,f ) and the only light edge which crosses (S,V − S) is<br>(c,d). Since none of these edges are contained in the set A, the cut respects the set A.<br>Note that if we were to add any of the edges previously mentioned to A, then the cut would no longer respect A.<br><br> Given the definitions above, let G = (V, E) be a connected and undirected graph with edge<br>weights w(e), A be a subset of E such that some MST of G contains A, (S,V −S) be a cut<br>that respects A, and (u, v ) be a light edge crossing (S, V − S).<br></p><img src="assets/img/Screen%20Shot%202021-12-01%20at%2010.06.36%20AM.png" width="800"/>
-                </div>
-            </div>
-            <div class="p-5 mb-4 bg-light round-3">
-                <div class="container-fluid py-5">
                     <h1 class="display-5 fw-bold">Some Special Points About MST</h1>
                     <p class="col-md-8 fs-4">Theorem : There exists an MST that contains A ∪ {(u, v )}.<br>The MST algorithm maintains a subset A of edges with no cycles. That is, the graph represented by GA = (V, A) is a forest (a set of distinct unconnected trees).<br>Any safe edge (u,v) connects two distinct connected components of GA. For some connected component C = (VC,EC) in GA, the safe edge (u,v) is a light edge crossing (VC , V − VC ).<br></p>
                 </div>
